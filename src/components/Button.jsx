@@ -7,7 +7,8 @@ const Button = () => {
       <a href="https://www.apple.com/app-store/" target="_blank">
         <button
           type="button"
-          class="flex items-center justify-center w-48 mt-3 text-white bg-black h-14 rounded-xl"
+          // class="flex items-center justify-center w-48 mt-3 text-white bg-black h-14 rounded-xl"
+          className="flex items-center justify-center w-48 sm:w-36 mt-3 text-white bg-black h-14 rounded-xl"
         >
           <div class="mr-3">
             <svg viewBox="0 0 384 512" width="30">
@@ -19,7 +20,9 @@ const Button = () => {
           </div>
           <div>
             <div class="text-xs">Download on the</div>
-            <div class="-mt-1 font-sans text-xl font-semibold">App Store</div>
+            <div class="-mt-1 font-sans text-xl sm:text-sm font-semibold">
+              App Store
+            </div>
           </div>
         </button>
       </a>
@@ -27,7 +30,7 @@ const Button = () => {
       <a href="https://play.google.com/" target="_blank">
         <button
           type="button"
-          class="flex items-center justify-center w-48 mt-3 text-white bg-black rounded-lg h-14"
+          className="flex items-center justify-center w-48 sm:w-36 mt-3 text-white bg-black h-14 rounded-xl"
         >
           <div class="mr-3">
             <svg viewBox="30 336.7 120.9 129.2" width="30">
@@ -51,7 +54,9 @@ const Button = () => {
           </div>
           <div>
             <div class="text-xs">GET IT ON</div>
-            <div class="-mt-1 font-sans text-xl font-semibold">Google Play</div>
+            <div class="-mt-1 font-sans text-xl sm:text-sm font-semibold">
+              Google Play
+            </div>
           </div>
         </button>
       </a>
