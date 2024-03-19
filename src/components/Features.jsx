@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "../styles/global";
 import assets from "../assets";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const FeatureCard = ({ iconUrl, iconText }) => (
   <div className={styles.featureCard}>
-    <img src={iconUrl} alt="icon" className={styles.featureImg} />
+    <LazyLoadImage src={iconUrl} alt="icon" className={styles.featureImg} />
+    {/* <img src={iconUrl} alt="icon" className={styles.featureImg} /> */}
     <p className={styles.featureText}>{iconText}</p>
   </div>
 );

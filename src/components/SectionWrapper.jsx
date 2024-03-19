@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/global";
-// import assets from "../assets";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Button from "./Button";
 
 const SectionWrapper = ({
@@ -62,8 +62,7 @@ const SectionWrapper = ({
           {showBtn && <Button />}
         </div>
         <div className={`flex-1 ${styles.flexCenter} p-8 sm:px-0`}>
-          <img
-            loading="lazy"
+          <LazyLoadImage
             src={mockupImg}
             alt="mockup"
             className={` ${styles.sectionImg} ${
