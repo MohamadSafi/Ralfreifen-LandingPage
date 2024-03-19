@@ -10,6 +10,7 @@ const SectionWrapper = ({
   mockupImg,
   banner,
   reverse,
+  Hlevel,
 }) => {
   return (
     <div
@@ -27,6 +28,23 @@ const SectionWrapper = ({
       ${reverse ? "fadeRightMini" : "fadeLeftMini"}
       ${reverse ? styles.textRight : styles.textLeft}`}
         >
+          {Hlevel === 1 ? (
+            <h1
+              className={` ${reverse ? styles.blackText : styles.whiteText} ${
+                styles.h1Text
+              }`}
+            >
+              {title}
+            </h1>
+          ) : (
+            <h2
+              className={` ${reverse ? styles.blackText : styles.whiteText} ${
+                styles.h1Text
+              }`}
+            >
+              {title}
+            </h2>
+          )}
           <h1
             className={` ${reverse ? styles.blackText : styles.whiteText} ${
               styles.h1Text
@@ -45,6 +63,7 @@ const SectionWrapper = ({
         </div>
         <div className={`flex-1 ${styles.flexCenter} p-8 sm:px-0`}>
           <img
+            loading="lazy"
             src={mockupImg}
             alt="mockup"
             className={` ${styles.sectionImg} ${
