@@ -10,7 +10,7 @@ const App = () => {
         showBtn
         mockupImg={assets.homeHero}
         banner="banner"
-        Hlevel={1}
+        Hlevel={"1"}
       />
 
       <SectionWrapper
@@ -18,7 +18,7 @@ const App = () => {
         description="Wählen Sie Ihren Standort und suchen Sie, was Sie brauchen. Bei uns finden Sie tolle Angebote ganz in Ihrer Nähe."
         mockupImg={assets.homeCards}
         reverse
-        Hlevel={2}
+        Hlevel={"2"}
       />
 
       <Features />
@@ -27,7 +27,7 @@ const App = () => {
         description="Zeigen Sie mehr Leuten, was Sie anbieten, und lassen Sie Ihr Geschäft wachsen. Ralfreifen hilft Ihnen dabei."
         mockupImg={assets.feature}
         reverse
-        Hlevel={2}
+        Hlevel={"2"}
       />
 
       <SectionWrapper
@@ -35,7 +35,7 @@ const App = () => {
         description="Ein Konto bei Ralfreifen zu erstellen ist kostenlos und einfach. Geben Sie Ihre Daten ein und legen Sie sofort los."
         mockupImg={assets.mockup}
         banner="banner02"
-        Hlevel={2}
+        Hlevel={"2"}
       />
 
       <Download />

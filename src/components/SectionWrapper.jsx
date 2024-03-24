@@ -28,7 +28,7 @@ const SectionWrapper = ({
       ${reverse ? "fadeRightMini" : "fadeLeftMini"}
       ${reverse ? styles.textRight : styles.textLeft}`}
         >
-          {Hlevel === 1 ? (
+          {Hlevel === "1" ? (
             <h1
               className={` ${reverse ? styles.blackText : styles.whiteText} ${
                 styles.h1Text
@@ -45,13 +45,7 @@ const SectionWrapper = ({
               {title}
             </h2>
           )}
-          <h1
-            className={` ${reverse ? styles.blackText : styles.whiteText} ${
-              styles.h1Text
-            }`}
-          >
-            {title}
-          </h1>
+
           <p
             className={` ${reverse ? styles.blackText : styles.whiteText} ${
               styles.descriptionText
