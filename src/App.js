@@ -54,6 +54,9 @@ const App = () => {
             <span className="bold">Ralfreifen.de@gmail.com</span>
           </p>
         </a>
+        <a href="/privacy-policy" className="text-white">
+          Datenschutzrichtlinie
+        </a>
       </div>
     </div>
   );
